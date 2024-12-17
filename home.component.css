@@ -1,0 +1,65 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 50%;
+    height: 800px;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .slider-button.prev {
+    left: 10px;
+  }
+  
+  .slider-button.next {
+    right: 10px;
+  }
+  
+  .slider-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  

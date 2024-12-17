@@ -1,0 +1,17 @@
+<button (click)="logout()">Logout</button>
+
+<div class="slider">
+  <button class="slider-button prev" (click)="prev()">&#9664;</button>
+  <div class="slider-track" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+    <div class="slider-item" *ngFor="let card of cards">
+      <div class="card">
+        <img [src]="card.image" alt="Card Image" />
+        <div class="card-content">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="slider-button next" (click)="next()">&#9654;</button>
+</div>

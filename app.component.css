@@ -1,0 +1,36 @@
+/* Container for navigation buttons */
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+/* Style for buttons */
+.nav-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+/* Container for image */
+.image-container {
+  position: absolute; /* Allow precise positioning */
+  top: 10px; /* Position 10px from the top */
+  right: 10px; /* Position 10px from the right */
+}
+
+/* Image style */
+.angular-logo {
+  width: 150px; /* Set width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: drop shadow */
+}
